@@ -1,0 +1,79 @@
+================================================================================
+  PEDESTRIAN ROUTING NETWORK - START HERE
+================================================================================
+
+Welcome! You've found a production-ready pedestrian routing network for
+Singapore covering 5,430 halal-certified outlets (82.3% coverage).
+
+-------------------------------------------------------------------------------
+  STEP 1: READ THIS FIRST
+-------------------------------------------------------------------------------
+
+  New User?        → Open: QUICK_START.md
+  Need Overview?   → Open: documentation/NETWORK_SUMMARY.md  
+  Finding Files?   → Open: INDEX.md
+
+-------------------------------------------------------------------------------
+  STEP 2: LOAD THE NETWORK
+-------------------------------------------------------------------------------
+
+In Python:
+
+    import pickle
+    import pandas as pd
+    
+    # Load network graph
+    with open('core_files/pedestrian_network_graph_v2.pkl', 'rb') as f:
+        G = pickle.load(f)
+    
+    # Load outlets
+    outlets = pd.read_csv('core_files/outlet_network_connections_v2.csv')
+    
+    print(f"Loaded: {G.number_of_nodes():,} nodes, {G.number_of_edges():,} edges")
+
+-------------------------------------------------------------------------------
+  STEP 3: RUN EXAMPLES
+-------------------------------------------------------------------------------
+
+    cd scripts/
+    python network_usage_examples.py
+
+This will show you 6 practical examples:
+  1. Nearest outlet queries
+  2. Accessibility comparisons  
+  3. Hub outlet identification
+  4. Route quality analysis
+  5. Regional coverage
+  6. GIS export
+
+-------------------------------------------------------------------------------
+  FOLDER STRUCTURE
+-------------------------------------------------------------------------------
+
+  core_files/          ← Main network files (START HERE)
+  documentation/       ← Read these guides
+  scripts/             ← Run these Python files
+  analysis_outputs/    ← Example results
+  gis_files/          ← For QGIS/ArcGIS
+
+-------------------------------------------------------------------------------
+  QUICK STATS
+-------------------------------------------------------------------------------
+
+  Network:      10,641 nodes | 11,808 edges | 2,107.9 km
+  Outlets:      5,430 connected (82.3% coverage)
+  Status:       Production Ready ✓
+  Performance:  <0.1s per route
+
+-------------------------------------------------------------------------------
+  SUPPORT
+-------------------------------------------------------------------------------
+
+  File Guide:       INDEX.md
+  Quick Start:      QUICK_START.md
+  Full Docs:        documentation/NETWORK_DOCUMENTATION.md
+  Examples:         scripts/network_usage_examples.py
+
+================================================================================
+  Ready to go! Start with: QUICK_START.md
+================================================================================

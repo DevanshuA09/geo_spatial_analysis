@@ -1,0 +1,13 @@
+PEDESTRIAN NETWORK STATISTICS (v2)
+======================================================================
+
+total_nodes: 10641
+total_edges: 11808
+network_nodes: 5211
+outlet_nodes: 5430
+connected_outlets: 5430
+total_outlets: 6595
+coverage_pct: 82.34
+is_connected: True
+avg_degree: 2.22
+network_length_km: 2107.89
