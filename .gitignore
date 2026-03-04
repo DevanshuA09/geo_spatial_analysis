@@ -27,17 +27,12 @@ __pycache__/
 .Spotlight-V100
 .Trashes
 
-# Large GIS source files (keep processed outputs)
+# Large GIS source files (raw inputs — use LTA DataMall to download)
 RoadSectionLine_Apr2025/
 Footpath_Apr2025/
 RoadCrossing_Apr2025/
 PedestrainOverheadbridge_UnderPass_Apr2025/
 building2025_PC.csv
 
-# Keep these important files:
-# - *.csv (processed data)
-# - *.md (documentation)
-# - *.py (scripts)
-# - *.png (visualizations)
-# - pedestrian_network/ (network outputs)
-# - data collection/ (collected data)
+# Large binary network graph (~50 MB) — use Git LFS or download separately
+network/pedestrian_network_graph_v2.pkl

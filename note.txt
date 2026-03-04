@@ -1,4 +1,0 @@
-Note: The ‘pedestrian network’  file  is made up of fairly messy segments. 
-A ’simple’ way of constructing a routing network might be to start from the road network, 
-and assume that all Cat 2 roads onwards have some pedestrian pathways; and cross-check against the LTA pedestrian network, 
-rather than try to build from the pedestrian network itself. 
